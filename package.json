@@ -1,0 +1,10 @@
+{
+  "name": "Solar-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "victoriasyluma <victoriasyluma3@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
