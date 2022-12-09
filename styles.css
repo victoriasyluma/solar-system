@@ -1,12 +1,12 @@
 body {
-  background: radial-gradient(#c4c4d3 1%, #1a1842 5%, black);
+  background-image: radial-gradient(#c4c4d3 1%, #1a1842 5%, black);
   margin: 0;
   position: relative;
 }
 
 #sun {
-  width: 130px;
-  height: 130px;
+  width: 115px;
+  height: 115px;
 }
 
 #sun-container {
@@ -36,6 +36,8 @@ body {
 
 .orbit {
   border: 1px solid white;
+  opacity: 0.5;
+  filter: blur(1px);
 }
 
 .absolute {
@@ -59,11 +61,11 @@ body {
 }
 
 #earth {
-  width: 30px;
-  height: 30px;
-  background-color: rgb(127, 192, 221);
+  width: 28px;
+  height: 28px;
+  background-image: radial-gradient(#a4af56 1%, #515169);
   position: absolute;
-  top: -7px;
+  top: -2px;
   left: -6px;
 }
 
@@ -88,4 +90,59 @@ body {
 .rotate-infinite-left {
   animation: spin-once 5s linear infinite;
   animation-direction: reverse;
+}
+
+#sun-orbit-three {
+  width: 400px;
+  height: 400px;
+}
+
+#mercury-container {
+  width: 210px;
+  height: 210px;
+  position: relative;
+}
+
+#mercury {
+  width: 25px;
+  height: 25px;
+  background-image: radial-gradient(orange, red);
+  position: absolute;
+  right: -10px;
+  top: -20px;
+}
+
+.rotate-infinite-mercury {
+  animation: spin-once 10s linear infinite;
+  animation-direction: reverse;
+}
+
+#mercury-moon {
+  width: 6px;
+  height: 6px;
+  background-color: rgb(247, 247, 157);
+  top: -11;
+}
+
+.rotate-infinite-right {
+  animation: spin-once 2s linear infinite;
+}
+
+#venus-container {
+  width: 283px;
+  height: 283px;
+  position: relative;
+}
+
+#venus {
+  width: 23px;
+  height: 23px;
+  background-image: radial-gradient(rgb(99, 39, 39) 40%, rgb(246, 176, 149));
+  position: absolute;
+  top: -9px;
+  left: -15px;
+}
+
+.rotate-infinite-venus {
+  animation: spin-once 5s linear infinite;
 }
