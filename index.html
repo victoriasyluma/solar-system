@@ -4,41 +4,53 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="sun-container" class="container">
-      <img id="sun" src="./assets/stars/sun.png" />
-    </div>
+    <div id="solar-system">
+      <div id="sun-container" class="container">
+        <img id="sun" src="./assets/stars/sun.png" />
+      </div>
 
-    <div class="absolute container top align-center">
-      <div class="circle orbit" id="sun-orbit-one"></div>
-    </div>
+      <div class="absolute container top align-center">
+        <div class="circle orbit" id="sun-orbit-one"></div>
+      </div>
 
-    <div class="absolute container top align-center">
-      <div class="circle orbit" id="sun-orbit-two"></div>
-    </div>
+      <div class="absolute container top align-center">
+        <div class="circle orbit" id="sun-orbit-two"></div>
+      </div>
 
-    <div class="absolute container top align-center">
-      <div class="circle orbit" id="sun-orbit-three"></div>
-    </div>
+      <div class="absolute container top align-center">
+        <div class="circle orbit" id="sun-orbit-three"></div>
+      </div>
 
-    <div class="absolute container top align-center">
-      <div id="earth-container" class="rotate-infinite">
-        <div id="earth" class="circle rotate-infinite-left">
-          <div id="moon" class="circle absolute"></div>
+      <div class="absolute container top align-center">
+        <div id="earth-container" class="rotate-infinite">
+          <div id="earth" class="circle rotate-infinite-left">
+            <div id="moon" class="circle absolute"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="absolute container top align-center">
-      <div id="mercury-container" class="rotate-infinite-mercury">
-        <div id="mercury" class="circle rotate-infinite-right">
-          <div id="mercury-moon" class="circle absolute"></div>
+      <div class="absolute container top align-center">
+        <div id="mercury-container" class="rotate-infinite-mercury">
+          <div id="mercury" class="circle relative">
+            <div
+              class="absolute container top align-center rotate-infinite-right"
+            >
+              <div id="mercury-moon" class="circle absolute"></div>
+            </div>
+
+            <div
+              class="absolute container top align-center rotate-infinite-left"
+            >
+              <div id="mercury-moon2" class="circle absolute"></div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="absolute container top align-center">
-      <div id="venus-container" class="rotate-infinite-venus">
-        <div id="venus" class="circle rotate-infinite-left"></div>
+      <div class="absolute container top align-center">
+        <div id="venus-container" class="rotate-infinite-venus">
+          <div id="venus" class="circle rotate-infinite-left"></div>
+        </div>
       </div>
     </div>
   </body>

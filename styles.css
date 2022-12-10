@@ -7,6 +7,8 @@ body {
 #sun {
   width: 115px;
   height: 115px;
+  animation: bouncing 3s ease-in-out infinite;
+  animation-direction: alternate;
 }
 
 #sun-container {
@@ -121,7 +123,18 @@ body {
   width: 6px;
   height: 6px;
   background-color: rgb(247, 247, 157);
-  top: -11;
+  top: -9px;
+}
+
+#mercury-moon2 {
+  width: 4px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  top: -7px;
+}
+
+.relative {
+  position: relative;
 }
 
 .rotate-infinite-right {
@@ -145,4 +158,14 @@ body {
 
 .rotate-infinite-venus {
   animation: spin-once 5s linear infinite;
+}
+
+@keyframes bouncing {
+  50% {
+    transform: scale(1.4);
+  }
+}
+
+#solar-system {
+  transform: scale(1.3);
 }
